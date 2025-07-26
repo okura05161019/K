@@ -2,108 +2,108 @@ import { Survey } from '../types/survey';
 
 export const universityFoodSurvey: Survey = {
   id: 'university-food-survey-2024',
-  title: 'University Students Favorite Food Survey',
-  description: 'Help us understand the food preferences and eating habits of university students across different campuses.',
+  title: '大学生の好きな食べ物アンケート',
+  description: '様々なキャンパスの大学生の食べ物の好みや食習慣について理解するためのアンケートです。',
   questions: [
     {
       id: 'personal-info',
       type: 'text',
-      question: 'What is your name?',
+      question: 'お名前を教えてください',
       required: true
     },
     {
       id: 'university',
       type: 'select',
-      question: 'Which university do you attend?',
+      question: 'どちらの大学に通っていますか？',
       options: [
-        'Stanford University',
-        'MIT',
-        'Harvard University',
-        'UCLA',
-        'Yale University',
-        'UC Berkeley',
-        'Princeton University',
-        'University of Chicago',
-        'Columbia University',
-        'Duke University',
-        'Northwestern University',
-        'Caltech',
-        'University of Pennsylvania',
-        'Other'
+        '東京大学',
+        '京都大学',
+        '大阪大学',
+        '早稲田大学',
+        '慶應義塾大学',
+        '東京工業大学',
+        '一橋大学',
+        '筑波大学',
+        '神戸大学',
+        '九州大学',
+        '北海道大学',
+        '東北大学',
+        '名古屋大学',
+        'その他'
       ],
       required: true
     },
     {
       id: 'major',
       type: 'text',
-      question: 'What is your major?',
+      question: '専攻は何ですか？',
       required: true
     },
     {
       id: 'year',
       type: 'radio',
-      question: 'What year are you in?',
-      options: ['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate'],
+      question: '何年生ですか？',
+      options: ['1年生', '2年生', '3年生', '4年生', '大学院生'],
       required: true
     },
     {
       id: 'favorite-food',
       type: 'text',
-      question: 'What is your favorite food?',
+      question: '好きな食べ物は何ですか？',
       required: true
     },
     {
       id: 'food-category',
       type: 'select',
-      question: 'Which category best describes your favorite food?',
+      question: 'あなたの好きな食べ物はどのカテゴリーに当てはまりますか？',
       options: [
-        'Fast Food',
-        'Asian',
-        'Italian',
-        'Mexican',
-        'American',
-        'Mediterranean',
-        'Indian',
-        'Other'
+        'ファストフード',
+        'アジア料理',
+        'イタリア料理',
+        'メキシコ料理',
+        'アメリカ料理',
+        '地中海料理',
+        'インド料理',
+        'その他'
       ],
       required: true
     },
     {
       id: 'dietary-restrictions',
       type: 'multiselect',
-      question: 'Do you have any dietary restrictions? (Select all that apply)',
+      question: '食事制限はありますか？（該当するものをすべて選択してください）',
       options: [
-        'None',
-        'Vegetarian',
-        'Vegan',
-        'Gluten-Free',
-        'Dairy-Free',
-        'Nut Allergy',
-        'Halal',
-        'Kosher',
-        'Other'
+        'なし',
+        'ベジタリアン',
+        'ビーガン',
+        'グルテンフリー',
+        '乳製品不使用',
+        'ナッツアレルギー',
+        'ハラール',
+        'コーシャー',
+        'その他'
       ],
       required: false
     },
     {
       id: 'budget-range',
       type: 'radio',
-      question: 'What is your typical budget for a meal?',
-      options: ['$0-10', '$10-20', '$20-30', '$30+'],
+      question: '1回の食事の予算はいくらですか？',
+      options: ['500円以下', '500-1000円', '1000-1500円', '1500円以上'],
       required: true
     },
     {
       id: 'eating-frequency',
       type: 'radio',
-      question: 'How often do you eat your favorite food?',
-      options: ['Daily', 'Weekly', 'Monthly', 'Rarely'],
+      question: '好きな食べ物をどのくらいの頻度で食べますか？',
+      options: ['毎日', '週に数回', '月に数回', 'たまに'],
       required: true
     },
     {
       id: 'campus-dining',
       type: 'radio',
-      question: 'How satisfied are you with your campus dining options?',
-      options: ['Very Satisfied', 'Satisfied', 'Neutral', 'Dissatisfied', 'Very Dissatisfied'],
+      question: '学食の満足度はいかがですか？',
+      options: ['とても満足', '満足', 'どちらでもない', '不満', 'とても不満'],
       required: true
     }
   ],
